@@ -1,4 +1,3 @@
-
 @media (max-width: 920px) {
   .main-header {
     &__phone {
@@ -6,13 +5,47 @@
     }
   }
   .main-menu {
+    width: 100%;
     display: none;
+    &__list {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    // стили для второй страницы
+   /* .page2 {
+      .main-menu{
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        &__list {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          z-index: 100;
+        }
+        &__item {
+          display: block;
+          text-align: center;
+        }
+        &__link {
+          display: block;
+          background-color: #ffc107;
+          border-top: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }*/
 
   }
 
   .menu-btn {
     opacity: 0.7;
-    position:absolute;
+    position: absolute;
     top: 1px;
     right: 20px;
     z-index: 300;
@@ -27,7 +60,7 @@
       background: rgba(0, 0, 0, 0.8);
       visibility: visible;
       transition-delay: 0.1s;
-      width:100%;
+      width: 100%;
       height: 100%;
       position: fixed;
 
@@ -74,16 +107,14 @@
 
   }
 
+  .logo {
+    top: -43px;
+    margin-right: 102%;
+    order: 2;
+  }
 
-.logo {
-  top: -43px;
-  margin-right: 102%;
-  order: 2;
 }
 
-}
-
-/*
 @media (max-width: 840px) {
   .main-header {
     &__image {
@@ -94,12 +125,13 @@
   }
 
 }
-*/
+
 @media (max-width: 770px) {
   .section {
     padding: 40px 0;
   }
 }
+
 @media (max-width: 684px) {
 
   .hidden-menu {
@@ -116,7 +148,6 @@
   }
 }
 
-/*
 @media (max-width: 480px) {
 
   .main-header {
@@ -129,4 +160,4 @@
 
     }
   }
-}*/
+}
