@@ -893,8 +893,8 @@ body, html {
 }
 
 .section__text {
-  font-size: 15px;
-  color: #999;
+  font-size: 1.3rem;
+  color: #777;
 }
 
 .accordion {
