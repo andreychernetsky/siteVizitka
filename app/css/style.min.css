@@ -610,6 +610,17 @@ body, html {
   padding: 0;
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+span {
+  color: #e2181c;
+  font-size: 1.6rem;
+}
+
 .container {
   width: 100%;
   max-width: 1170px;
@@ -870,6 +881,18 @@ body, html {
   text-align: center;
 }
 
+.section__image {
+  background-image: url("../../img/music/myFoto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 270px;
+  width: 365px;
+  max-width: 100%;
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
 .section__suptitle {
   font-family: 'Kaushan Script', cursive;
   font-size: 1.9rem;
@@ -893,8 +916,14 @@ body, html {
 }
 
 .section__text {
+  text-align: center;
   font-size: 1.3rem;
-  color: #777;
+  line-height: 36px;
+  color: #7d7d7d;
+}
+
+.section__text--float {
+  text-align: justify;
 }
 
 .accordion {
@@ -1193,6 +1222,26 @@ body, html {
   .logo__picture {
     width: 60px;
     height: 60px;
+  }
+  .section__picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section__image {
+    float: none;
+    max-width: 604px;
+    max-height: 430px;
+  }
+  .section__text--float {
+    text-align: center;
   }
 }
 
