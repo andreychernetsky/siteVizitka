@@ -882,7 +882,7 @@ span {
 }
 
 .section__image {
-  background-image: url("../../img/music/myFoto.jpg");
+  background-image: url("../img/music/myFoto.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
