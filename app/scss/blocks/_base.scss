@@ -17,3 +17,13 @@ body,html {
   margin: 0;
   padding: 0;
 }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+span {
+  color: #e2181c;
+  font-size:1.6rem;
+}
